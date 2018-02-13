@@ -1,0 +1,564 @@
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get --verbose --namespace=bob' expecting any result and text 'Using project "bob"'; re-trying every 0.5s until completion or 300.000s status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get --verbose --namespace=bob' expecting any result and text 'Using project "bob"'; re-trying every 0.5s until completion or 300.000s time=0.180s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get --verbose | grep "Using project" | grep "$PROJECT"' expecting success status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get --verbose | grep "Using project" | grep "$PROJECT"' expecting success time=0.072s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko help | grep -e "get\s*Get running spark clusters$"' expecting success status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko help | grep -e "get\s*Get running spark clusters$"' expecting success time=0.033s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko help | grep -e "delete\s*Delete spark cluster by name$"' expecting success status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko help | grep -e "delete\s*Delete spark cluster by name$"' expecting success time=0.029s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko help | grep -e "create\s*Create new spark cluster$"' expecting success status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko help | grep -e "create\s*Create new spark cluster$"' expecting success time=0.030s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko help | grep -e "scale\s*Scale spark cluster by name$"' expecting success status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko help | grep -e "scale\s*Scale spark cluster by name$"' expecting success time=0.034s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko help' expecting success and not text 'create_eph' status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko help' expecting success and not text 'create_eph' time=0.034s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko help' expecting success and not text 'delete_eph' status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko help' expecting success and not text 'delete_eph' time=0.033s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko help' expecting success and not text 'get_eph' status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko help' expecting success and not text 'get_eph' time=0.032s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko help' expecting success and not text 'configmap' status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko help' expecting success and not text 'configmap' time=0.030s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko help create_eph' expecting success and text 'Create new spark cluster' status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko help create_eph' expecting success and text 'Create new spark cluster' time=0.031s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko help delete_eph' expecting success and text 'Delete spark cluster by name' status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko help delete_eph' expecting success and text 'Delete spark cluster by name' time=0.029s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko help get_eph' expecting success and text 'Get running spark clusters' status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko help get_eph' expecting success and text 'Get running spark clusters' time=0.032s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko help configmap' expecting success and text 'Lookup a configmap by name and print as json if it exists' status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko help configmap' expecting success and text 'Lookup a configmap by name and print as json if it exists' time=0.031s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko help create | grep Default\ image\ is\ "$SPARK_IMAGE"' expecting success status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko help create | grep Default\ image\ is\ "$SPARK_IMAGE"' expecting success time=0.030s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko version' expecting success and text 'oshinko' status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko version' expecting success and text 'oshinko' time=0.033s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko version | grep Default\ spark\ image:\ "$SPARK_IMAGE"' expecting success status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko version | grep Default\ spark\ image:\ "$SPARK_IMAGE"' expecting success time=0.027s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get' expecting any result and text 'There are no clusters in any projects. You can create a cluster with the 'create' command.'; re-trying every 0.5s until completion or 300.000s status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get' expecting any result and text 'There are no clusters in any projects. You can create a cluster with the 'create' command.'; re-trying every 0.5s until completion or 300.000s time=0.152s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create abc --workers=2' expecting success status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create abc --workers=2' expecting success time=7.452s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko delete' expecting failure status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko delete' expecting failure time=0.047s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create bob' expecting success status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create bob' expecting success time=7.420s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko delete bob' expecting success status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko delete bob' expecting success time=7.899s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get bob' expecting failure status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get bob' expecting failure time=2.049s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko delete bob --app=sam-1' expecting failure and text 'unknown flag' status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko delete bob --app=sam-1' expecting failure and text 'unknown flag' time=0.043s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko delete bob --app-status=completed' expecting failure and text 'unknown flag' status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko delete bob --app-status=completed' expecting failure and text 'unknown flag' time=0.037s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get' expecting any result and text 'There are no clusters in any projects. You can create a cluster with the 'create' command.'; re-trying every 0.5s until completion or 300.000s status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get' expecting any result and text 'There are no clusters in any projects. You can create a cluster with the 'create' command.'; re-trying every 0.5s until completion or 300.000s time=0.922s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create abc' expecting success status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create abc' expecting success time=6.326s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get abc' expecting success; re-trying every 0.5s until completion or 300.000s status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get abc' expecting success; re-trying every 0.5s until completion or 300.000s time=4.463s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get abc -o yaml' expecting success and text 'WorkerCount: 1' status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get abc -o yaml' expecting success and text 'WorkerCount: 1' time=2.944s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get abc -o yaml' expecting success and text 'MasterCount: 1' status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get abc -o yaml' expecting success and text 'MasterCount: 1' time=0.529s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get abc -o yaml' expecting any result and text 'workerCount: 1'; re-trying every 0.5s until completion or 300.000s status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get abc -o yaml' expecting any result and text 'workerCount: 1'; re-trying every 0.5s until completion or 300.000s time=47.112s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get abc -o yaml' expecting any result and text 'masterCount: 1'; re-trying every 0.5s until completion or 300.000s status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get abc -o yaml' expecting any result and text 'masterCount: 1'; re-trying every 0.5s until completion or 300.000s time=0.284s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko scale abc' expecting success and text 'neither masters nor workers specified, cluster "abc" not scaled' status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko scale abc' expecting success and text 'neither masters nor workers specified, cluster "abc" not scaled' time=0.067s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko scale abc --masters=2' expecting failure and text 'cluster configuration must have a master count of 0 or 1' status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko scale abc --masters=2' expecting failure and text 'cluster configuration must have a master count of 0 or 1' time=0.982s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko scale abc --workers=0 --masters=0' expecting success status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko scale abc --workers=0 --masters=0' expecting success time=2.278s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get abc -o yaml' expecting success and text 'WorkerCount: 0' status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get abc -o yaml' expecting success and text 'WorkerCount: 0' time=0.294s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get abc -o yaml' expecting success and text 'MasterCount: 0' status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get abc -o yaml' expecting success and text 'MasterCount: 0' time=2.283s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get abc -o yaml' expecting any result and text 'workerCount: 0'; re-trying every 0.5s until completion or 300.000s status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get abc -o yaml' expecting any result and text 'workerCount: 0'; re-trying every 0.5s until completion or 300.000s time=35.869s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get abc -o yaml' expecting any result and text 'masterCount: 0'; re-trying every 0.5s until completion or 300.000s status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get abc -o yaml' expecting any result and text 'masterCount: 0'; re-trying every 0.5s until completion or 300.000s time=3.622s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko scale abc --workers=2' expecting success status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko scale abc --workers=2' expecting success time=0.397s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get abc -o yaml' expecting success and text 'MasterCount: 0' status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get abc -o yaml' expecting success and text 'MasterCount: 0' time=1.691s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get abc -o json' expecting success and text '"WorkerCount": 2' status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get abc -o json' expecting success and text '"WorkerCount": 2' time=0.079s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get abc -o yaml' expecting any result and text 'workerCount: 2'; re-trying every 0.5s until completion or 300.000s status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get abc -o yaml' expecting any result and text 'workerCount: 2'; re-trying every 0.5s until completion or 300.000s time=0.083s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get abc -o yaml' expecting success and text 'masterCount: 0' status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get abc -o yaml' expecting success and text 'masterCount: 0' time=0.060s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko scale abc --masters=1' expecting success status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko scale abc --masters=1' expecting success time=0.812s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get abc -o yaml' expecting success and text 'MasterCount: 1' status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get abc -o yaml' expecting success and text 'MasterCount: 1' time=1.710s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get abc -o json' expecting success and text '"WorkerCount": 2' status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get abc -o json' expecting success and text '"WorkerCount": 2' time=0.164s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get abc -o yaml' expecting success and text 'workerCount: 2' status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get abc -o yaml' expecting success and text 'workerCount: 2' time=0.074s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get abc -o yaml' expecting any result and text 'masterCount: 1'; re-trying every 0.5s until completion or 300.000s status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get abc -o yaml' expecting any result and text 'masterCount: 1'; re-trying every 0.5s until completion or 300.000s time=0.475s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get' expecting any result and text 'There are no clusters in any projects. You can create a cluster with the 'create' command.'; re-trying every 0.5s until completion or 300.000s status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get' expecting any result and text 'There are no clusters in any projects. You can create a cluster with the 'create' command.'; re-trying every 0.5s until completion or 300.000s time=1.172s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create abc --workers=2' expecting success status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create abc --workers=2' expecting success time=5.458s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko delete_eph' expecting failure status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko delete_eph' expecting failure time=0.031s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create bob' expecting success status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create bob' expecting success time=5.477s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko delete_eph bob' expecting success status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko delete_eph bob' expecting success time=8.778s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get bob' expecting failure status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get bob' expecting failure time=2.902s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko delete_eph bob --app=sam-1' expecting failure and text 'Both --app and --app-status must be set' status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko delete_eph bob --app=sam-1' expecting failure and text 'Both --app and --app-status must be set' time=0.679s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko delete_eph bob --app-status=completed' expecting failure and text 'Both --app and --app-status must be set' status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko delete_eph bob --app-status=completed' expecting failure and text 'Both --app and --app-status must be set' time=0.544s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko delete_eph bob --app=sam-1 --app-status=wrong' expecting failure and text 'INVALID app-status value, only completed|terminated allowed' status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko delete_eph bob --app=sam-1 --app-status=wrong' expecting failure and text 'INVALID app-status value, only completed|terminated allowed' time=0.068s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='oc get rc hello-world-1' expecting success; re-trying every 0.5s until completion or 300.000s status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='oc get rc hello-world-1' expecting success; re-trying every 0.5s until completion or 300.000s time=3.089s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create_eph -e cluster --app=hello-world-1' expecting success and text 'ephemeral cluster "cluster" created' status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create_eph -e cluster --app=hello-world-1' expecting success and text 'ephemeral cluster "cluster" created' time=8.904s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='oc get pod -l deploymentconfig=cluster-m --template="{{index .items 0 \"status\" \"phase\"}}"' expecting any result and text 'Running'; re-trying every 0.5s until completion or 300.000s status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='oc get pod -l deploymentconfig=cluster-m --template="{{index .items 0 \"status\" \"phase\"}}"' expecting any result and text 'Running'; re-trying every 0.5s until completion or 300.000s time=154.932s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='oc get pod -l deploymentconfig=cluster-w --template="{{index .items 0 \"status\" \"phase\"}}"' expecting any result and text 'Running'; re-trying every 0.5s until completion or 300.000s status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='oc get pod -l deploymentconfig=cluster-w --template="{{index .items 0 \"status\" \"phase\"}}"' expecting any result and text 'Running'; re-trying every 0.5s until completion or 300.000s time=1.322s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko delete_eph cluster --app=hello-world-1 --app-status=terminated' expecting failure and text 'driver replica count > 0 \(or > 1 for completed app\)' status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko delete_eph cluster --app=hello-world-1 --app-status=terminated' expecting failure and text 'driver replica count > 0 \(or > 1 for completed app\)' time=0.065s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko delete_eph cluster --app=someother --app-status=terminated' expecting failure and text 'cluster is not linked to app' status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko delete_eph cluster --app=someother --app-status=terminated' expecting failure and text 'cluster is not linked to app' time=0.944s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko delete_eph cluster --app=hello-world-1 --app-status=completed' expecting success status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko delete_eph cluster --app=hello-world-1 --app-status=completed' expecting success time=8.938s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='oc create configmap daniel --from-literal=mykey=myvalue' expecting success status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='oc create configmap daniel --from-literal=mykey=myvalue' expecting success time=0.380s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko configmap' expecting failure status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko configmap' expecting failure time=0.040s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko configmap nothere' expecting failure and text 'configmaps "nothere" not found' status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko configmap nothere' expecting failure and text 'configmaps "nothere" not found' time=0.435s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko configmap daniel' expecting success and text '"mykey": "myvalue"' status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko configmap daniel' expecting success and text '"mykey": "myvalue"' time=2.287s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko configmap daniel -o json' expecting success and text '"mykey": "myvalue"' status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko configmap daniel -o json' expecting success and text '"mykey": "myvalue"' time=1.582s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko configmap daniel -o yaml' expecting success and text 'mykey: myvalue' status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko configmap daniel -o yaml' expecting success and text 'mykey: myvalue' time=1.495s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get_eph' expecting any result and text 'There are no clusters in any projects. You can create a cluster with the 'create' command.'; re-trying every 0.5s until completion or 300.000s status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get_eph' expecting any result and text 'There are no clusters in any projects. You can create a cluster with the 'create' command.'; re-trying every 0.5s until completion or 300.000s time=0.756s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create abc --workers=2' expecting success status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create abc --workers=2' expecting success time=4.762s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create def --workers=1' expecting success status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create def --workers=1' expecting success time=6.379s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get_eph abc -o json' expecting any result and text '"WorkerCount": 2'; re-trying every 0.5s until completion or 300.000s status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get_eph abc -o json' expecting any result and text '"WorkerCount": 2'; re-trying every 0.5s until completion or 300.000s time=5.590s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get_eph abc -o yaml' expecting any result and text 'WorkerCount: 2'; re-trying every 0.5s until completion or 300.000s status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get_eph abc -o yaml' expecting any result and text 'WorkerCount: 2'; re-trying every 0.5s until completion or 300.000s time=2.736s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get_eph' expecting any result and text 'abc'; re-trying every 0.5s until completion or 300.000s status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get_eph' expecting any result and text 'abc'; re-trying every 0.5s until completion or 300.000s time=2.336s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get_eph' expecting any result and text 'def'; re-trying every 0.5s until completion or 300.000s status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get_eph' expecting any result and text 'def'; re-trying every 0.5s until completion or 300.000s time=2.304s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko-cli get_eph abc | grep -e "^abc\s*[012]\s*spark://abc:7077\s*http://abc-ui:8080\s*abc-ui-route.*\s*Running\s*<shared>$"' expecting success status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko-cli get_eph abc | grep -e "^abc\s*[012]\s*spark://abc:7077\s*http://abc-ui:8080\s*abc-ui-route.*\s*Running\s*<shared>$"' expecting success time=2.094s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get_eph --app=bill' expecting failure and text 'no cluster found for app 'bill'' status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get_eph --app=bill' expecting failure and text 'no cluster found for app 'bill'' time=1.526s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create_eph -e effy --app=abc-m-1' expecting success and text 'ephemeral cluster "effy" created' status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create_eph -e effy --app=abc-m-1' expecting success and text 'ephemeral cluster "effy" created' time=8.615s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get_eph --app=abc-m-1' expecting success and text 'effy.*abc-m-1' status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get_eph --app=abc-m-1' expecting success and text 'effy.*abc-m-1' time=4.743s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='oc delete service abc-ui' expecting success status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='oc delete service abc-ui' expecting success time=0.880s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko-cli get_eph abc' expecting success and text 'Incomplete' status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko-cli get_eph abc' expecting success and text 'Incomplete' time=2.668s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko-cli get_eph abc' expecting success and text '<missing>' status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko-cli get_eph abc' expecting success and text '<missing>' time=0.091s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get_eph nothere' expecting failure and text 'no such cluster 'nothere'' status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get_eph nothere' expecting failure and text 'no such cluster 'nothere'' time=0.085s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get_eph -v' expecting success and text 'You have access to the following projects' status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get_eph -v' expecting success and text 'You have access to the following projects' time=0.865s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get_eph' expecting success and not text 'You have access to the following projects' status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get_eph' expecting success and not text 'You have access to the following projects' time=0.868s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get' expecting success and not text 'You have access to the following projects' status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get' expecting success and not text 'You have access to the following projects' time=0.859s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get --verbose=false' expecting success and not text 'You have access to the following projects' status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get --verbose=false' expecting success and not text 'You have access to the following projects' time=0.866s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get' expecting any result and text 'There are no clusters in any projects. You can create a cluster with the 'create' command.'; re-trying every 0.5s until completion or 300.000s status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get' expecting any result and text 'There are no clusters in any projects. You can create a cluster with the 'create' command.'; re-trying every 0.5s until completion or 300.000s time=2.190s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create abc --workers=2' expecting success status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create abc --workers=2' expecting success time=5.813s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create def --workers=1' expecting success status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create def --workers=1' expecting success time=10.652s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get abc -o json' expecting any result and text '"WorkerCount": 2'; re-trying every 0.5s until completion or 300.000s status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get abc -o json' expecting any result and text '"WorkerCount": 2'; re-trying every 0.5s until completion or 300.000s time=4.405s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get def -o yaml' expecting any result and text 'WorkerCount: 1'; re-trying every 0.5s until completion or 300.000s status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get def -o yaml' expecting any result and text 'WorkerCount: 1'; re-trying every 0.5s until completion or 300.000s time=3.569s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get' expecting success and text 'abc' status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get' expecting success and text 'abc' time=2.249s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get' expecting success and text 'def' status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get' expecting success and text 'def' time=1.966s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko-cli get abc | grep -e "^abc\s*[012]\s*spark://abc:7077\s*http://abc-ui:8080\s*abc-ui-route.*\s*Running\s*<shared>$"' expecting success status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko-cli get abc | grep -e "^abc\s*[012]\s*spark://abc:7077\s*http://abc-ui:8080\s*abc-ui-route.*\s*Running\s*<shared>$"' expecting success time=3.103s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='oc delete service abc-ui' expecting success status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='oc delete service abc-ui' expecting success time=1.548s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko-cli get abc' expecting success and text 'Incomplete' status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko-cli get abc' expecting success and text 'Incomplete' time=3.677s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko-cli get abc' expecting success and text '<missing>' status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko-cli get abc' expecting success and text '<missing>' time=1.452s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get nothere' expecting failure and text 'no such cluster 'nothere'' status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get nothere' expecting failure and text 'no such cluster 'nothere'' time=0.965s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get -v' expecting success and text 'You have access to the following projects' status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get -v' expecting success and text 'You have access to the following projects' time=0.309s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get --verbose' expecting success and text 'You have access to the following projects' status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get --verbose' expecting success and text 'You have access to the following projects' time=0.260s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get' expecting success and not text 'You have access to the following projects' status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get' expecting success and not text 'You have access to the following projects' time=0.756s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get --verbose=false' expecting success and not text 'You have access to the following projects' status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get --verbose=false' expecting success and not text 'You have access to the following projects' time=0.277s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get --app=bill' expecting failure and text 'unknown flag' status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get --app=bill' expecting failure and text 'unknown flag' time=0.038s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get' expecting any result and text 'There are no clusters in any projects. You can create a cluster with the 'create' command.'; re-trying every 0.5s until completion or 300.000s status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get' expecting any result and text 'There are no clusters in any projects. You can create a cluster with the 'create' command.'; re-trying every 0.5s until completion or 300.000s time=0.755s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create' expecting failure status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create' expecting failure time=0.034s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create abc' expecting success status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create abc' expecting success time=6.265s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get abc -o yaml | grep 'WorkerCount: 1'' expecting success status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get abc -o yaml | grep 'WorkerCount: 1'' expecting success time=6.437s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get abc -o yaml | grep 'MasterCount: 1'' expecting success status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get abc -o yaml | grep 'MasterCount: 1'' expecting success time=3.987s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get abc -o yaml' expecting any result and text 'workerCount: 1'; re-trying every 0.5s until completion or 300.000s status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get abc -o yaml' expecting any result and text 'workerCount: 1'; re-trying every 0.5s until completion or 300.000s time=51.195s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get abc -o yaml' expecting any result and text 'masterCount: 1'; re-trying every 0.5s until completion or 300.000s status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get abc -o yaml' expecting any result and text 'masterCount: 1'; re-trying every 0.5s until completion or 300.000s time=0.079s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko delete abc' expecting success status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko delete abc' expecting success time=8.360s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create def --workers=-1' expecting success status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create def --workers=-1' expecting success time=4.423s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get def -o yaml | grep 'WorkerCount: 1'' expecting success status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get def -o yaml | grep 'WorkerCount: 1'' expecting success time=2.347s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get def -o yaml' expecting any result and text 'workerCount: 1'; re-trying every 0.5s until completion or 300.000s status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get def -o yaml' expecting any result and text 'workerCount: 1'; re-trying every 0.5s until completion or 300.000s time=50.672s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko delete def' expecting success status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko delete def' expecting success time=8.039s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create ghi --workers=2' expecting success status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create ghi --workers=2' expecting success time=4.758s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get ghi -o yaml | grep 'WorkerCount: 2'' expecting success status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get ghi -o yaml | grep 'WorkerCount: 2'' expecting success time=1.131s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get ghi -o yaml' expecting any result and text 'workerCount: 2'; re-trying every 0.5s until completion or 300.000s status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get ghi -o yaml' expecting any result and text 'workerCount: 2'; re-trying every 0.5s until completion or 300.000s time=42.313s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko delete ghi' expecting success status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko delete ghi' expecting success time=9.847s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create sam --workers=0' expecting success status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create sam --workers=0' expecting success time=5.574s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get sam -o yaml | grep 'WorkerCount: 0'' expecting success status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get sam -o yaml | grep 'WorkerCount: 0'' expecting success time=3.145s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get sam -o yaml' expecting any result and text 'workerCount: 0'; re-trying every 0.5s until completion or 300.000s status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get sam -o yaml' expecting any result and text 'workerCount: 0'; re-trying every 0.5s until completion or 300.000s time=0.081s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko delete sam' expecting success status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko delete sam' expecting success time=8.573s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create jkl --masters=-1' expecting success status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create jkl --masters=-1' expecting success time=3.871s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get jkl -o yaml | grep 'MasterCount: 1'' expecting success status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get jkl -o yaml | grep 'MasterCount: 1'' expecting success time=2.355s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get jkl -o yaml' expecting any result and text 'masterCount: 1'; re-trying every 0.5s until completion or 300.000s status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get jkl -o yaml' expecting any result and text 'masterCount: 1'; re-trying every 0.5s until completion or 300.000s time=46.001s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko delete jkl' expecting success status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko delete jkl' expecting success time=7.161s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create jill --masters=0' expecting success status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create jill --masters=0' expecting success time=7.722s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get jill -o yaml | grep 'MasterCount: 0'' expecting success status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get jill -o yaml | grep 'MasterCount: 0'' expecting success time=1.947s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get jill -o yaml' expecting any result and text 'masterCount: 0'; re-trying every 0.5s until completion or 300.000s status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get jill -o yaml' expecting any result and text 'masterCount: 0'; re-trying every 0.5s until completion or 300.000s time=0.305s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko delete jill' expecting success status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko delete jill' expecting success time=3.444s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create mno --masters=2' expecting failure and text 'cluster configuration must have a master count of 0 or 1' status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create mno --masters=2' expecting failure and text 'cluster configuration must have a master count of 0 or 1' time=1.499s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='oc create configmap testmap' expecting success status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='oc create configmap testmap' expecting success time=0.174s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create mno --workerconfig=jack' expecting failure and text 'unable to find spark configuration 'jack'' status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create mno --workerconfig=jack' expecting failure and text 'unable to find spark configuration 'jack'' time=0.185s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create mno --workerconfig=testmap' expecting success status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create mno --workerconfig=testmap' expecting success time=5.170s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko delete mno' expecting success status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko delete mno' expecting success time=9.687s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create mno --masterconfig=jack' expecting failure and text 'unable to find spark configuration 'jack'' status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create mno --masterconfig=jack' expecting failure and text 'unable to find spark configuration 'jack'' time=0.384s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create pqr --masterconfig=testmap' expecting success status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create pqr --masterconfig=testmap' expecting success time=2.563s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko delete pqr' expecting success status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko delete pqr' expecting success time=6.353s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create sally' expecting success status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create sally' expecting success time=3.503s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create sally' expecting failure and text 'cluster 'sally' already exists' status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create sally' expecting failure and text 'cluster 'sally' already exists' time=3.373s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='oc delete service sally-ui' expecting success status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='oc delete service sally-ui' expecting success time=2.064s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create sally' expecting failure and text 'cluster 'sally' already exists \(incomplete\)' status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create sally' expecting failure and text 'cluster 'sally' already exists \(incomplete\)' time=0.463s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko delete sally' expecting success status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko delete sally' expecting success time=8.545s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create klondike --metrics=true' expecting success status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create klondike --metrics=true' expecting success time=5.725s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='oc get service klondike-metrics' expecting success; re-trying every 0.5s until completion or 300.000s status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='oc get service klondike-metrics' expecting success; re-trying every 0.5s until completion or 300.000s time=0.314s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='oc log dc/klondike-m' expecting any result and text 'with jolokia metrics'; re-trying every 0.5s until completion or 300.000s status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='oc log dc/klondike-m' expecting any result and text 'with jolokia metrics'; re-trying every 0.5s until completion or 300.000s time=108.553s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko delete klondike' expecting success status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko delete klondike' expecting success time=4.633s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create klondike0 --metrics=jolokia' expecting success status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create klondike0 --metrics=jolokia' expecting success time=3.933s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='oc get service klondike0-metrics' expecting success; re-trying every 0.5s until completion or 300.000s status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='oc get service klondike0-metrics' expecting success; re-trying every 0.5s until completion or 300.000s time=0.390s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='oc log dc/klondike0-m' expecting any result and text 'with jolokia metrics'; re-trying every 0.5s until completion or 300.000s status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='oc log dc/klondike0-m' expecting any result and text 'with jolokia metrics'; re-trying every 0.5s until completion or 300.000s time=117.656s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko delete klondike0' expecting success status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko delete klondike0' expecting success time=8.498s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create klondike1 --metrics=prometheus' expecting success status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create klondike1 --metrics=prometheus' expecting success time=4.972s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='oc get service klondike1-metrics' expecting success; re-trying every 0.5s until completion or 300.000s status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='oc get service klondike1-metrics' expecting success; re-trying every 0.5s until completion or 300.000s time=1.007s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='oc log dc/klondike1-m' expecting any result and text 'with prometheus metrics'; re-trying every 0.5s until completion or 300.000s status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='oc log dc/klondike1-m' expecting any result and text 'with prometheus metrics'; re-trying every 0.5s until completion or 300.000s time=89.162s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko delete klondike1' expecting success status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko delete klondike1' expecting success time=8.943s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create klondike2' expecting success status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create klondike2' expecting success time=2.137s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='oc get service klondike2-ui' expecting success; re-trying every 0.5s until completion or 300.000s status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='oc get service klondike2-ui' expecting success; re-trying every 0.5s until completion or 300.000s time=0.757s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='oc get service klondike2-metrics' expecting failure status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='oc get service klondike2-metrics' expecting failure time=0.315s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko delete klondike2' expecting success status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko delete klondike2' expecting success time=6.108s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create klondike3 --metrics=false' expecting success status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create klondike3 --metrics=false' expecting success time=7.914s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='oc get service klondike3-ui' expecting success; re-trying every 0.5s until completion or 300.000s status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='oc get service klondike3-ui' expecting success; re-trying every 0.5s until completion or 300.000s time=0.245s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='oc get service klondike3-metrics' expecting failure status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='oc get service klondike3-metrics' expecting failure time=0.233s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko delete klondike3' expecting success status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko delete klondike3' expecting success time=10.958s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create klondike4 --metrics=notgonnadoit' expecting failure and text 'must be 'true', 'false', 'jolokia', or 'prometheus'' status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create klondike4 --metrics=notgonnadoit' expecting failure and text 'must be 'true', 'false', 'jolokia', or 'prometheus'' time=0.365s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create charlie --exposeui=false' expecting success status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create charlie --exposeui=false' expecting success time=4.822s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get charlie' expecting success and text 'charlie.*<no route>' status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get charlie' expecting success and text 'charlie.*<no route>' time=2.853s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko delete charlie' expecting success status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko delete charlie' expecting success time=5.605s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create charlie2 --exposeui=true' expecting success status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create charlie2 --exposeui=true' expecting success time=4.683s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get charlie2' expecting success and text 'charlie2-ui-route' status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get charlie2' expecting success and text 'charlie2-ui-route' time=2.631s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko delete charlie2' expecting success status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko delete charlie2' expecting success time=5.063s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create charlie3' expecting success status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create charlie3' expecting success time=3.657s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get charlie3' expecting success and text 'charlie3-ui-route' status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get charlie3' expecting success and text 'charlie3-ui-route' time=2.637s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko delete charlie3' expecting success status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko delete charlie3' expecting success time=8.994s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create charlie4 --exposeui=notgonnadoit' expecting failure and text 'must be a boolean' status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create charlie4 --exposeui=notgonnadoit' expecting failure and text 'must be a boolean' time=0.804s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create chicken --storedconfig=jack' expecting failure and text 'named config 'jack' does not exist' status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create chicken --storedconfig=jack' expecting failure and text 'named config 'jack' does not exist' time=0.233s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create chicken --storedconfig=clusterconfig' expecting success status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create chicken --storedconfig=clusterconfig' expecting success time=4.114s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get chicken -o yaml' expecting success and text 'WorkerCount: 3' status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get chicken -o yaml' expecting success and text 'WorkerCount: 3' time=3.319s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get chicken -o yaml' expecting success and text 'MasterCount: 0' status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get chicken -o yaml' expecting success and text 'MasterCount: 0' time=1.778s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get chicken -o yaml' expecting success and text 'ExposeWebUI: "false"' status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get chicken -o yaml' expecting success and text 'ExposeWebUI: "false"' time=0.614s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get chicken -o yaml' expecting success and text 'Metrics: "true"' status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get chicken -o yaml' expecting success and text 'Metrics: "true"' time=1.793s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get chicken -o yaml' expecting success and text 'Name: clusterconfig' status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get chicken -o yaml' expecting success and text 'Name: clusterconfig' time=0.181s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get chicken -o yaml' expecting success and text 'SparkImage: myimage' status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get chicken -o yaml' expecting success and text 'SparkImage: myimage' time=0.063s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get chicken -o yaml' expecting success and text 'image: myimage' status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get chicken -o yaml' expecting success and text 'image: myimage' time=0.060s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get chicken -o yaml' expecting success and text 'SparkMasterConfig: masterconfig' status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get chicken -o yaml' expecting success and text 'SparkMasterConfig: masterconfig' time=0.062s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get chicken -o yaml' expecting success and text 'SparkWorkerConfig: workerconfig' status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get chicken -o yaml' expecting success and text 'SparkWorkerConfig: workerconfig' time=0.058s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get chicken -o yaml' expecting any result and text 'workerCount: 3'; re-trying every 0.5s until completion or 300.000s status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get chicken -o yaml' expecting any result and text 'workerCount: 3'; re-trying every 0.5s until completion or 300.000s time=65.135s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get chicken -o yaml' expecting any result and text 'masterCount: 0'; re-trying every 0.5s until completion or 300.000s status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get chicken -o yaml' expecting any result and text 'masterCount: 0'; re-trying every 0.5s until completion or 300.000s time=0.397s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko delete chicken' expecting success status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko delete chicken' expecting success time=8.524s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create chicken2 --storedconfig=clusterconfig2' expecting success status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create chicken2 --storedconfig=clusterconfig2' expecting success time=4.113s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get chicken2 -o yaml' expecting success and text 'Metrics: jolokia' status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get chicken2 -o yaml' expecting success and text 'Metrics: jolokia' time=2.989s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko delete chicken2' expecting success status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko delete chicken2' expecting success time=7.368s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create chicken3 --storedconfig=clusterconfig3' expecting success status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create chicken3 --storedconfig=clusterconfig3' expecting success time=6.587s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get chicken3 -o yaml' expecting success and text 'Metrics: prometheus' status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get chicken3 -o yaml' expecting success and text 'Metrics: prometheus' time=2.116s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko delete chicken3' expecting success status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko delete chicken3' expecting success time=10.921s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create egg' expecting success status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create egg' expecting success time=4.241s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get egg -o yaml' expecting success and text 'WorkerCount: 1' status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get egg -o yaml' expecting success and text 'WorkerCount: 1' time=1.548s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get egg -o yaml' expecting success and text 'MasterCount: 1' status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get egg -o yaml' expecting success and text 'MasterCount: 1' time=0.076s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get egg -o yaml' expecting success and text 'ExposeWebUI: "true"' status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get egg -o yaml' expecting success and text 'ExposeWebUI: "true"' time=0.065s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get egg -o yaml' expecting success and text 'Metrics: "false"' status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get egg -o yaml' expecting success and text 'Metrics: "false"' time=0.063s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get egg -o yaml' expecting success and text 'Name: ""' status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get egg -o yaml' expecting success and text 'Name: ""' time=0.058s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get egg -o yaml' expecting success and text 'SparkImage: radanalyticsio/openshift-spark' status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get egg -o yaml' expecting success and text 'SparkImage: radanalyticsio/openshift-spark' time=0.069s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get egg -o yaml' expecting success and text 'image: radanalyticsio/openshift-spark' status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get egg -o yaml' expecting success and text 'image: radanalyticsio/openshift-spark' time=0.068s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get egg -o yaml' expecting success and text 'SparkMasterConfig: ""' status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get egg -o yaml' expecting success and text 'SparkMasterConfig: ""' time=0.063s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get egg -o yaml' expecting success and text 'SparkWorkerConfig: ""' status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get egg -o yaml' expecting success and text 'SparkWorkerConfig: ""' time=0.064s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get egg -o yaml' expecting any result and text 'workerCount: 1'; re-trying every 0.5s until completion or 300.000s status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get egg -o yaml' expecting any result and text 'workerCount: 1'; re-trying every 0.5s until completion or 300.000s time=44.141s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get egg -o yaml' expecting any result and text 'masterCount: 1'; re-trying every 0.5s until completion or 300.000s status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get egg -o yaml' expecting any result and text 'masterCount: 1'; re-trying every 0.5s until completion or 300.000s time=0.082s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko delete egg' expecting success status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko delete egg' expecting success time=7.006s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create hawk --workers=1 --masters=1 --storedconfig=clusterconfig' expecting success status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create hawk --workers=1 --masters=1 --storedconfig=clusterconfig' expecting success time=4.993s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get hawk -o yaml' expecting success and text 'WorkerCount: 1' status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get hawk -o yaml' expecting success and text 'WorkerCount: 1' time=0.196s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get hawk -o yaml' expecting success and text 'MasterCount: 1' status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get hawk -o yaml' expecting success and text 'MasterCount: 1' time=0.486s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get hawk -o yaml' expecting any result and text 'workerCount: 1'; re-trying every 0.5s until completion or 300.000s status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get hawk -o yaml' expecting any result and text 'workerCount: 1'; re-trying every 0.5s until completion or 300.000s time=69.655s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get hawk -o yaml' expecting any result and text 'masterCount: 1'; re-trying every 0.5s until completion or 300.000s status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get hawk -o yaml' expecting any result and text 'masterCount: 1'; re-trying every 0.5s until completion or 300.000s time=7.415s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko delete hawk' expecting success status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko delete hawk' expecting success time=8.187s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create cordial --image=someotherimage' expecting success status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create cordial --image=someotherimage' expecting success time=4.475s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get cordial -o yaml' expecting success and text 'SparkImage: someotherimage' status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get cordial -o yaml' expecting success and text 'SparkImage: someotherimage' time=1.335s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get cordial -o yaml' expecting success and text 'image: someotherimage' status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get cordial -o yaml' expecting success and text 'image: someotherimage' time=0.604s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko delete cordial' expecting success status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko delete cordial' expecting success time=6.450s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create mouse --app=bill' expecting failure and text 'unknown flag' status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create mouse --app=bill' expecting failure and text 'unknown flag' time=0.048s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create mouse -e' expecting failure and text 'unknown shorthand flag' status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create mouse -e' expecting failure and text 'unknown shorthand flag' time=0.038s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create mouse --ephemeral=true' expecting failure and text 'unknown flag' status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create mouse --ephemeral=true' expecting failure and text 'unknown flag' time=0.035s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get' expecting any result and text 'There are no clusters in any projects. You can create a cluster with the 'create' command.'; re-trying every 0.5s until completion or 300.000s status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get' expecting any result and text 'There are no clusters in any projects. You can create a cluster with the 'create' command.'; re-trying every 0.5s until completion or 300.000s time=1.171s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create_eph' expecting failure status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create_eph' expecting failure time=0.040s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create_eph abc' expecting success status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create_eph abc' expecting success time=6.446s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get abc -o yaml | grep 'WorkerCount: 1'' expecting success status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get abc -o yaml | grep 'WorkerCount: 1'' expecting success time=3.995s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get abc -o yaml | grep 'MasterCount: 1'' expecting success status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get abc -o yaml | grep 'MasterCount: 1'' expecting success time=6.539s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko delete abc' expecting success status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko delete abc' expecting success time=9.078s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create_eph def --workers=-1' expecting success status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create_eph def --workers=-1' expecting success time=10.042s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get def -o yaml | grep 'WorkerCount: 1'' expecting success status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get def -o yaml | grep 'WorkerCount: 1'' expecting success time=5.680s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko delete def' expecting success status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko delete def' expecting success time=11.413s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create_eph ghi --workers=2' expecting success status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create_eph ghi --workers=2' expecting success time=6.592s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get ghi -o yaml | grep 'WorkerCount: 2'' expecting success status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get ghi -o yaml | grep 'WorkerCount: 2'' expecting success time=3.265s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko delete ghi' expecting success status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko delete ghi' expecting success time=9.880s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create_eph sam --workers=0' expecting success status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create_eph sam --workers=0' expecting success time=6.662s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get sam -o yaml | grep 'WorkerCount: 0'' expecting success status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get sam -o yaml | grep 'WorkerCount: 0'' expecting success time=3.093s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko delete sam' expecting success status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko delete sam' expecting success time=11.613s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create_eph jkl --masters=-1' expecting success status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create_eph jkl --masters=-1' expecting success time=9.076s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get jkl -o yaml | grep 'MasterCount: 1'' expecting success status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get jkl -o yaml | grep 'MasterCount: 1'' expecting success time=4.643s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko delete jkl' expecting success status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko delete jkl' expecting success time=11.066s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create_eph jill --masters=0' expecting success status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create_eph jill --masters=0' expecting success time=5.666s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get jill -o yaml | grep 'MasterCount: 0'' expecting success status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get jill -o yaml | grep 'MasterCount: 0'' expecting success time=2.717s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko delete jill' expecting success status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko delete jill' expecting success time=9.829s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create_eph mno --masters=2' expecting failure and text 'cluster configuration must have a master count of 0 or 1' status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create_eph mno --masters=2' expecting failure and text 'cluster configuration must have a master count of 0 or 1' time=2.543s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='oc create configmap testmap' expecting success status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='oc create configmap testmap' expecting success time=1.910s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create_eph mno --workerconfig=jack' expecting failure and text 'unable to find spark configuration 'jack'' status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create_eph mno --workerconfig=jack' expecting failure and text 'unable to find spark configuration 'jack'' time=2.921s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create_eph mno --workerconfig=testmap' expecting success status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create_eph mno --workerconfig=testmap' expecting success time=5.533s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko delete mno' expecting success status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko delete mno' expecting success time=8.949s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create_eph mno --masterconfig=jack' expecting failure and text 'unable to find spark configuration 'jack'' status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create_eph mno --masterconfig=jack' expecting failure and text 'unable to find spark configuration 'jack'' time=1.025s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create_eph pqr --masterconfig=testmap' expecting success status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create_eph pqr --masterconfig=testmap' expecting success time=6.352s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko delete pqr' expecting success status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko delete pqr' expecting success time=12.306s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create_eph sally' expecting success status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create_eph sally' expecting success time=5.889s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create_eph sally' expecting failure and text 'cluster 'sally' already exists' status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create_eph sally' expecting failure and text 'cluster 'sally' already exists' time=3.571s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='oc delete service sally-ui' expecting success status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='oc delete service sally-ui' expecting success time=2.906s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create_eph sally' expecting failure and text 'cluster 'sally' already exists \(incomplete\)' status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create_eph sally' expecting failure and text 'cluster 'sally' already exists \(incomplete\)' time=2.851s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create_eph charlie --exposeui=false' expecting success status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create_eph charlie --exposeui=false' expecting success time=8.107s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get charlie' expecting success and text 'charlie.*<no route>' status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get charlie' expecting success and text 'charlie.*<no route>' time=2.542s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create_eph chicken --storedconfig=jack' expecting failure and text 'named config 'jack' does not exist' status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create_eph chicken --storedconfig=jack' expecting failure and text 'named config 'jack' does not exist' time=1.992s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create_eph chicken --storedconfig=clusterconfig' expecting success status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create_eph chicken --storedconfig=clusterconfig' expecting success time=5.074s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get chicken -o yaml' expecting success and text 'WorkerCount: 3' status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get chicken -o yaml' expecting success and text 'WorkerCount: 3' time=1.876s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get chicken -o yaml' expecting success and text 'MasterCount: 0' status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get chicken -o yaml' expecting success and text 'MasterCount: 0' time=1.219s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create_eph hawk --workers=1 --masters=1 --storedconfig=clusterconfig' expecting success status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create_eph hawk --workers=1 --masters=1 --storedconfig=clusterconfig' expecting success time=3.099s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get hawk -o yaml' expecting success and text 'WorkerCount: 1' status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get hawk -o yaml' expecting success and text 'WorkerCount: 1' time=1.455s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get hawk -o yaml' expecting success and text 'MasterCount: 1' status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get hawk -o yaml' expecting success and text 'MasterCount: 1' time=0.838s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create_eph cordial --image=someotherimage' expecting success status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create_eph cordial --image=someotherimage' expecting success time=4.109s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create_eph -e bob' expecting failure and text 'An app value must be supplied if ephemeral is used' status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create_eph -e bob' expecting failure and text 'An app value must be supplied if ephemeral is used' time=1.499s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create_eph -e bob --app=kingkong' expecting success and text 'shared cluster "bob" created' status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create_eph -e bob --app=kingkong' expecting success and text 'shared cluster "bob" created' time=3.977s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create_eph -e sonofbob --app=bob-m-1' expecting success and text 'ephemeral cluster "sonofbob" created' status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create_eph -e sonofbob --app=bob-m-1' expecting success and text 'ephemeral cluster "sonofbob" created' time=5.416s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='oc export rc bob-m-1' expecting success and text 'uses-oshinko-cluster: sonofbob' status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='oc export rc bob-m-1' expecting success and text 'uses-oshinko-cluster: sonofbob' time=0.316s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create_eph vinny --app=sonofbob-m-1' expecting success and text 'shared cluster "vinny" created' status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create_eph vinny --app=sonofbob-m-1' expecting success and text 'shared cluster "vinny" created' time=6.224s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='oc export rc sonofbob-m-1' expecting success and text 'uses-oshinko-cluster: vinny' status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='oc export rc sonofbob-m-1' expecting success and text 'uses-oshinko-cluster: vinny' time=0.301s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko-cli get' expecting success and text 'The 'oshinko-cli' command has been deprecated.' status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko-cli get' expecting success and text 'The 'oshinko-cli' command has been deprecated.' time=1.581s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get' expecting success and not text 'The 'oshinko-cli' command has been deprecated.' status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko get' expecting success and not text 'The 'oshinko-cli' command has been deprecated.' time=1.302s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko-cli create bob' expecting success and text 'The 'oshinko-cli' command has been deprecated.' status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko-cli create bob' expecting success and text 'The 'oshinko-cli' command has been deprecated.' time=6.074s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create bill' expecting success and not text 'The 'oshinko-cli' command has been deprecated.' status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko create bill' expecting success and not text 'The 'oshinko-cli' command has been deprecated.' time=7.427s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko-cli scale bob' expecting success and text 'The 'oshinko-cli' command has been deprecated.' status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko-cli scale bob' expecting success and text 'The 'oshinko-cli' command has been deprecated.' time=2.458s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko scale bob' expecting success and not text 'The 'oshinko-cli' command has been deprecated.' status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko scale bob' expecting success and not text 'The 'oshinko-cli' command has been deprecated.' time=1.141s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko-cli delete bob' expecting success and text 'The 'oshinko-cli' command has been deprecated.' status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko-cli delete bob' expecting success and text 'The 'oshinko-cli' command has been deprecated.' time=9.121s: status=PASSED
+ level=INFO  openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko delete bill' expecting success and not text 'The 'oshinko-cli' command has been deprecated.' status=START  
+ level=INFO   openshiftVersion=3.7  project=oshinko-cli  action='_output/oshinko delete bill' expecting success and not text 'The 'oshinko-cli' command has been deprecated.' time=8.572s: status=PASSED
